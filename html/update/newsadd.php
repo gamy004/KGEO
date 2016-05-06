@@ -8,7 +8,7 @@
 </head>
 <body>
 	
-	<form action="testnews.php" method="POST" enctype="multipart/form-data">
+	<form action="manager.php" method="POST" enctype="multipart/form-data">
 		<table>
 			<tr>
 				<td>DATE:</td>
@@ -20,7 +20,7 @@
 			</tr>
 			<tr>
 				<td>CONTENT ENG:</td>
-				<td><textarea rows="20" cols="133" name="msgen" ></textarea></td>
+				<td><textarea name="conten" rows="20" cols="133" ></textarea></td>
 			</tr>
 			<tr>
 				<td>HEADER TH:</td>
@@ -28,14 +28,14 @@
 			</tr>
 			<tr>
 				<td>CONTENT TH:</td>
-				<td><textarea rows="20" cols="133" name="msgth" ></textarea></td>
+				<td><textarea name="contth" rows="20" cols="133" ></textarea></td>
 			</tr>
 			<tr>		
 				<td>IMG :</td>
 				<td><input type="file" name="filUpload" id="pic"></td>
 			</tr>
 			<tr>
-				<td><input type="submit"></td>
+				<td><input name="content" type="hidden" value="news"><input name="type" type="hidden" value="add"><input type="submit"></td>
 			</tr>
 		</table>	
 	</form>

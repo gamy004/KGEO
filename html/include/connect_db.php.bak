@@ -1,0 +1,18 @@
+<?php
+	$dbhost = "68.178.137.179";	//database server address
+	$dbuser = "KGEODB";		//username
+	$dbpwd = "glakXY123!";		//password
+	$dbname = "KGEODB";		//database name
+	
+	//connect to database
+	$dbconn = mysql_connect($dbhost,$dbuser,$dbpwd);	
+	if(!$dbconn)
+	{
+		echo "<h3> ERROR Cannot Connect Database</h3>";
+		exit();
+	}
+	mysql_select_db($dbname, $dbconn);		
+	mysql_query("SET character_set_results=utf8") or die('Invalid query: ' . mysql_error());
+	mysql_query("SET character_set_client=utf8") or die('Invalid query: ' . mysql_error());
+	mysql_query("SET character_set_connection=utf8") or die('Invalid query: ' . mysql_error());
+?>

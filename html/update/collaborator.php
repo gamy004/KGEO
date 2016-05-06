@@ -30,7 +30,8 @@
 			echo "<tr><form action=\"colledit.php\" method=\"POST\">";
 			echo "\t\t<button name=\"collid\" type=\"submit\" value=\"".$result['CollaboratorId']."\">EDIT</button>";
 			echo "</form></tr>";
-			echo "<form action=\"colldel.php\" method=\"POST\">";
+			echo "<form action=\"manager.php\" method=\"POST\">";
+			echo "<input name=\"content\" type=\"hidden\" value=\"collaborator\"><input name=\"type\" type=\"hidden\" value=\"del\">";
 			echo "\t\t<button name=\"collid\" type=\"submit\" value=\"".$result['CollaboratorId']."\">DELETE</button>";
 			echo "</form>";
 			echo "</table>";

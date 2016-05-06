@@ -30,8 +30,8 @@
 			echo "<tr><form action=\"newsedit.php\" method=\"POST\">";
 			echo "\t\t<button name=\"newsid\" type=\"submit\" value=\"".$result['NewsId']."\">EDIT</button>";
 			echo "</form></tr>";
-			echo "<form action=\"newsdel.php\" method=\"POST\">";
-			echo "\t\t<button name=\"newsid\" type=\"submit\" value=\"".$result['NewsId']."\">DELETE</button>";
+			echo "<form action=\"manager.php\" method=\"POST\">";
+			echo "\t\t<button name=\"newsid\" type=\"submit\" value=\"".$result['NewsId']."\">DELETE</button><input name=\"content\" type=\"hidden\" value=\"news\"><input name=\"type\" type=\"hidden\" value=\"del\">";
 			echo "</form>";
 			echo "</table>";
 			echo "\t</td>";
